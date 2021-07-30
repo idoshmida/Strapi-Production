@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "varieties",
+  "info": {
+    "name": "variety"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "plantings": {
+      "via": "varieties",
+      "collection": "planting",
+      "dominant": true
+    }
+  }
+}

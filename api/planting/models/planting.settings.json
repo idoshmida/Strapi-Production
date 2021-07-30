@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plantings",
+  "info": {
+    "name": "planting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "number_of_plants": {
+      "type": "integer"
+    },
+    "plants_or_seeds": {
+      "type": "enumeration",
+      "enum": [
+        "plants",
+        "seeds"
+      ]
+    },
+    "poster": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "active_or_not": {
+      "type": "boolean"
+    },
+    "plots": {
+      "via": "plantings",
+      "collection": "plot"
+    },
+    "water": {
+      "via": "plantings",
+      "model": "water"
+    },
+    "works": {
+      "via": "plantings",
+      "collection": "work"
+    },
+    "varieties": {
+      "via": "plantings",
+      "collection": "variety"
+    },
+    "recieved_plant": {
+      "via": "plantings",
+      "model": "recieved-plants"
+    },
+    "observations": {
+      "via": "plantings",
+      "collection": "observation"
+    },
+    "sfika": {
+      "type": "decimal"
+    }
+  }
+}

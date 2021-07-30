@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plots",
+  "info": {
+    "name": "plot"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plot_name": {
+      "type": "string"
+    },
+    "plantings": {
+      "via": "plots",
+      "collection": "planting",
+      "dominant": true
+    }
+  }
+}

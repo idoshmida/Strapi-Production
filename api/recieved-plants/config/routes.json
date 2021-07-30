@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/recieved-plants",
+      "handler": "recieved-plants.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recieved-plants/count",
+      "handler": "recieved-plants.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/recieved-plants/:id",
+      "handler": "recieved-plants.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/recieved-plants",
+      "handler": "recieved-plants.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/recieved-plants/:id",
+      "handler": "recieved-plants.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/recieved-plants/:id",
+      "handler": "recieved-plants.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

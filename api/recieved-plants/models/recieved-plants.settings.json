@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recieved_plants",
+  "info": {
+    "name": "recieved_plants"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plantings": {
+      "via": "recieved_plant",
+      "collection": "planting"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

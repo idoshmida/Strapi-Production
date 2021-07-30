@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waters",
+  "info": {
+    "name": "water",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plantings": {
+      "via": "water",
+      "collection": "planting"
+    },
+    "time_of_water": {
+      "type": "time"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

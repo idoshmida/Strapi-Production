@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "work"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "plantings": {
+      "via": "works",
+      "collection": "planting",
+      "dominant": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "time_of_work": {
+      "type": "time"
+    },
+    "finished_or_not": {
+      "type": "boolean"
+    }
+  }
+}
