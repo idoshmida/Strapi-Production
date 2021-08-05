@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "machines",
+  "collectionName": "resource_instances",
   "info": {
-    "name": "resource",
-    "description": ""
+    "name": "resource_instance"
   },
   "options": {
     "increments": true,
@@ -30,19 +29,16 @@
       "required": false,
       "pluginOptions": {}
     },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "machine",
-        "greenhouse",
-        "vehicle",
-        "irrigation",
-        "equipment"
-      ]
+    "arrival": {
+      "type": "date"
     },
-    "resource_instances": {
-      "via": "resource",
-      "collection": "resource-instance"
+    "resource": {
+      "model": "machine",
+      "via": "resource_instances"
+    },
+    "resource_handings": {
+      "via": "resource_instance",
+      "collection": "resource-handing"
     }
   }
 }

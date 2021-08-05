@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "machines",
+  "collectionName": "harvests",
   "info": {
-    "name": "resource",
-    "description": ""
+    "name": "harvest"
   },
   "options": {
     "increments": true,
@@ -12,11 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "description": {
-      "type": "richtext"
+    "plantings": {
+      "collection": "planting",
+      "via": "harvests",
+      "dominant": true
     },
     "media": {
       "collection": "file",
@@ -30,19 +28,23 @@
       "required": false,
       "pluginOptions": {}
     },
-    "type": {
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "units": {
       "type": "enumeration",
       "enum": [
-        "machine",
-        "greenhouse",
-        "vehicle",
-        "irrigation",
-        "equipment"
+        "kilo",
+        "units",
+        "mana",
+        "boxes",
+        "karton",
+        "mishtach",
+        "dolev"
       ]
-    },
-    "resource_instances": {
-      "via": "resource",
-      "collection": "resource-instance"
     }
   }
 }

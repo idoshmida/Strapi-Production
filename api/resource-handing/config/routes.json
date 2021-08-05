@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/resource-handings",
+      "handler": "resource-handing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resource-handings/count",
+      "handler": "resource-handing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/resource-handings/:id",
+      "handler": "resource-handing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/resource-handings",
+      "handler": "resource-handing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/resource-handings/:id",
+      "handler": "resource-handing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/resource-handings/:id",
+      "handler": "resource-handing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

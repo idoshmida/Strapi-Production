@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/harvests",
+      "handler": "harvest.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/harvests/count",
+      "handler": "harvest.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/harvests/:id",
+      "handler": "harvest.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/harvests",
+      "handler": "harvest.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/harvests/:id",
+      "handler": "harvest.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/harvests/:id",
+      "handler": "harvest.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

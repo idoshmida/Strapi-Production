@@ -72,6 +72,10 @@
     },
     "sfika": {
       "type": "decimal"
+    },
+    "harvests": {
+      "via": "plantings",
+      "collection": "harvest"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_handings",
+  "info": {
+    "name": "resource_handing"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "resource_instance": {
+      "model": "resource-instance",
+      "via": "resource_handings"
+    }
+  }
+}
